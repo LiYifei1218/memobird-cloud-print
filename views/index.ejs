@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+ 		<form method="post">
+ 			<p>在下面输入打印内容</p>
+  		<input type="text" name="content"" value=<%= content %> /><br />
+      <select name="printers">
+        <option value ="xr">许染的咕咕机</option>
+        <option value ="xx">小朋友的咕咕机</option>
+      </select>
+      <input type="submit" value="发送" />
+      <p>打印状态:<%= isprint %></p>
+		</form>
+  </body>
+</html>
